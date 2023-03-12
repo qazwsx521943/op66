@@ -13,6 +13,5 @@ export default async function getFreeChamp() {
     }
 
     const freeChamp = await res.json();
-    console.log(freeChamp);
     return freeChamp["freeChampionIds"];
 }
