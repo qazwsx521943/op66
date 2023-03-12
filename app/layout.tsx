@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import "./globals.css";
+import Head from "next/head";
 
 export const metadata = {
     title: "Create Next App",
@@ -9,6 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
+            <Head>
+                <title>OP66</title>
+                <link href="/public/next.svg" />
+            </Head>
             <body>
                 <Navbar />
                 {children}
