@@ -10,6 +10,13 @@ type Mastery = {
     summonerId: string;
 };
 
+type Skins = {
+    id: string;
+    num: number;
+    name: string;
+    chromas: boolean;
+};
+
 interface ChampionData {
     version: string;
     id: string;

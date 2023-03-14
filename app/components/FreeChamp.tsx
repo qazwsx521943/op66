@@ -5,8 +5,9 @@ import Link from "next/link";
 
 async function FreeChamp({ id }: { id: number }) {
     const champion: ChampionData = await getChampionByKey(id.toString());
+    const name = champion.name.replaceAll(" ", "");
     return (
-        <Link href={`/champion/${champion.name}`}>
+        <Link href={`/champion/${name}`}>
             <li>
                 <Image width={80} height={80} src={`/champion/${champion.image.full}`} alt="champion" />
                 <p className="text-sm text-center">{champion.name}</p>
