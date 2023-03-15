@@ -1,3 +1,4 @@
+import "server-only";
 export default async function getFreeChamp() {
     const res = await fetch(`https://tw2.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${process.env.LOL_API_KEY}`, {
         headers: {
